@@ -11,6 +11,7 @@
 $file_auth_brainy = "auth_brainy.php";
 ```
 4) В файле /etc/brainy/tpl/basic/auth/auth.tpl
+
 Найти:
 ```html
 <form class="auth-form" action="auth.php" method="post">
