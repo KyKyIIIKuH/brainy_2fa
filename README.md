@@ -6,7 +6,7 @@
 1) Скачать zip архив с репозитория https://github.com/KyKyIIIKuH/brainy_2fa (Скриншот)
 2) Распаковать в папку панели /etc/brainy (можно исключить файлы LICENSE и README.md)
 3) советую поменять название файла auth.php на другое
-[*]в файле /etc/brainy/auth_2FA.php, указываем название файла которое указали в 3 шаге
+- в файле /etc/brainy/auth_2FA.php, указываем название файла которое указали в 3 шаге
 ```html
 $file_auth_brainy = "auth_brainy.php";
 ```
