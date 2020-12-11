@@ -24,7 +24,7 @@ $file_auth_brainy = "auth_brainy.php";
 <form class="auth-form" action="auth_2FA.php" method="post">
 ```
 
-5) Открыть панель https://your_ip:8000/index.php?do=2fa (your_ip - ip адрес вашей панели)
+5) Открыть панель https://your_ip:8000/index.php?do=2FA (your_ip - ip адрес вашей панели)
 6) Создаем новый QR код
 
 Также можно добавить ссылку в боковое меню (код вставлять в файл /etc/brainy/tpl/basic/index.tpl):
