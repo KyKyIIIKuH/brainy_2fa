@@ -20,7 +20,7 @@
             {/if}
 				
 				<div>
-					<i class="fa fa-user" aria-hidden="true"></i><input type="text" name="otp" placeholder="2FA код" />
+					<i class="fa fa-lock" aria-hidden="true"></i><input type="text" name="otp" placeholder="2FA код" />
 				</div>
                 <input type="hidden" name="login_panel" value="{$login_panel}">
                 <input type="hidden" name="password_panel" value="{$password_panel}">
