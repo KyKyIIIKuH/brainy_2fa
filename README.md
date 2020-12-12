@@ -11,7 +11,7 @@
 3) советую поменять название файла auth.php на другое
 - в файле /etc/brainy/auth_2FA.php, указываем название файла авторизации которое указали в 3 шаге
 ```html
-$file_auth_brainy = "auth_brainy.php";
+$file_auth_brainy = "auth.php";
 ```
 4) В файле /etc/brainy/tpl/basic/auth/auth.tpl
 
