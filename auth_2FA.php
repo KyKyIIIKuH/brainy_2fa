@@ -10,7 +10,7 @@ if(isset($login_panel) && empty($login_panel) || !isset($login_panel) && empty($
     die();
 }
 
-$file_auth_brainy = "auth_brainy.php";
+$file_auth_brainy = "auth.php";
 
 // BrainyCP
 require_once "./conf/globals.php";
