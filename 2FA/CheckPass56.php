@@ -9,6 +9,9 @@ foreach ($argv as &$value) {
 require_once "/etc/brainy/classes/server.php";
 require_once "/etc/brainy/conf/globals.php";
 
+/*
+Функция ниже принадлежит https://brainycp.com/
+*/
 function CheckPass($login, $pass)
 {
     $server = new server();
