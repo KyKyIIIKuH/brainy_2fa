@@ -81,7 +81,6 @@ class User
 
     public function doLogin(): void
     {
-        session_regenerate_id();
         $_SESSION['loggedin'] = true;
         $_SESSION['ua'] = $_SERVER['HTTP_USER_AGENT'];
     }
