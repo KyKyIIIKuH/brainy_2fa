@@ -26,7 +26,7 @@ $file_auth_brainy = "auth.php";
 
 5) Открыть панель https://your_ip:8000/index.php?do=2FA (your_ip - ip адрес вашей панели)
 6) Создаем новый QR код
-7) Запускаем программу Google Authenticator или Authy, сканируем QR Code
+7) Запускаем приложение Google Authenticator или Authy, сканируем QR Code
 
 Также можно добавить ссылку в боковое меню (код вставлять в файл /etc/brainy/tpl/basic/index.tpl):
 
