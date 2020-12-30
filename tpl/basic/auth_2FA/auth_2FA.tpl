@@ -35,6 +35,7 @@
 
 {literal}
 <script>
+	$("input[name=otp]").focus();
 	$('.auth-form input').keydown(function(){$('.auth-err').fadeOut();})
 </script>
 {/literal}
