@@ -30,7 +30,7 @@ $file_auth_brainy = "auth.php";
 
 Также можно добавить ссылку в боковое меню (код вставлять в файл /etc/brainy/tpl/basic/index.tpl):
 
-После строки 159, 313
+После строки 162, 316
 ```html
 <a href="?do=2FA">2FA</a>
 ```
