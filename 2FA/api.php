@@ -104,7 +104,7 @@ if (isset($data["username"]) && !empty($data["username"])) {
             }
             //if the OTP is wrong, destroy the session and tell the user to try again
             else {
-                session_destroy();
+                //session_destroy();
                 $response = array();
                 $response["error"] = true;
                 $response["messages"] = "login error";
@@ -113,7 +113,7 @@ if (isset($data["username"]) && !empty($data["username"])) {
         }
         // if the user is neither logged in nor in the OTP phase, show the login form
         else {
-            session_destroy();
+            //session_destroy();
             $response = array();
             $response["error"] = true;
             $response["messages"] = "no login";
