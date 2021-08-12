@@ -6,8 +6,8 @@ foreach ($argv as &$value) {
     $data[$array_params[0]] = (($array_params[1]));
 }
 
-require_once "/etc/brainy/classes/server.php";
-require_once "/etc/brainy/conf/globals.php";
+require_once "/usr/local/brainycp/classes/server.php";
+require_once "/usr/local/brainycp/globals.php";
 
 /*
 Функция ниже принадлежит https://brainycp.com/
