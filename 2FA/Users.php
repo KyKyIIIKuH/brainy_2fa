@@ -70,7 +70,7 @@ class User
     
     public function auth($pass)
     {       
-        $output = shell_exec("/usr/local/brainycp/src/compiled/php5/bin/php -q /etc/brainy/2FA/CheckPass56.php username=".escapeshellarg($this->user) . " password=".escapeshellarg($pass));
+        $output = shell_exec("/usr/local/brainycp/src/compiled/php5/bin/php -q /usr/local/brainycp/2FA/CheckPass56.php username=".escapeshellarg($this->user) . " password=".escapeshellarg($pass));
         return $output;
     }
 
