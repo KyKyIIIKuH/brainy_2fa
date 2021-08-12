@@ -1,4 +1,4 @@
-# 2FA (Google Authenticator) for BrainyCP
+# 2FA (Google Authenticator) for BrainyCP 1.08
 
 Функционал простой, позволяет хоть как-то защитить страницу авторизации.
 
