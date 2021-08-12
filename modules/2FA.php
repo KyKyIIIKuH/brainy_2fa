@@ -9,5 +9,5 @@
  * @version     1.0
  */
 
-require_once('/etc/brainy/modules/2FA/load.module.php');
+require_once('/usr/local/brainycp/modules/2FA/load.module.php');
 TwoFAController::getInstance()->init($smarty, $tpl);
