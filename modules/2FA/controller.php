@@ -83,7 +83,7 @@ class TwoFAController
             file_put_contents( __DIR__.'/../../data/2FA/users.dat', json_encode($data));
         }
         
-        $output = shell_exec("/usr/bin/php72/bin/php -q /etc/brainy/2FA/createqr.php username=".escapeshellarg($_SESSION["user"]));
+        $output = shell_exec("/usr/bin/php72/bin/php -q /usr/local/brainycp/2FA/createqr.php username=".escapeshellarg($_SESSION["user"]));
         header("Location: ?do=2FA");
     }
     
