@@ -7,7 +7,7 @@ foreach ($argv as &$value) {
 }
 
 require_once "/usr/local/brainycp/classes/server.php";
-require_once "/usr/local/brainycp/globals.php";
+require_once "/etc/brainy/globals.php";
 
 /*
 Функция ниже принадлежит https://brainycp.com/
