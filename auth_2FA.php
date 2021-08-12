@@ -13,7 +13,7 @@ if(isset($login_panel) && empty($login_panel) || !isset($login_panel) && empty($
 $file_auth_brainy = "auth.php";
 
 // BrainyCP
-require_once "./conf/globals.php";
+require_once "/etc/brainy/globals.php";
 require_once "./lib/punycode/idna_convert.php";
 require_once $GLOBALS["SERVER_PHP_PATH"];
 $server = new Server();
@@ -38,13 +38,13 @@ if (isset($conf_template["template"])) {
 
 // Проверяем пароль пользователя
 function check_auth2FA($username, $password) {
-    $output = shell_exec('/usr/bin/php72/bin/php -q /etc/brainy/2FA/api.php action=check_auth username='.escapeshellarg($username).' password='.escapeshellarg($password));
+    $output = shell_exec('/usr/bin/php72/bin/php -q /usr/local/brainycp/2FA/api.php action=check_auth username='.escapeshellarg($username).' password='.escapeshellarg($password));
     return json_decode($output);
 }
 
 // Проверяем существует ли пользователь в 2FA
 function check_user2FA($username, $password) {
-    $output = shell_exec('/usr/bin/php72/bin/php -q /etc/brainy/2FA/api.php action=check_user username='.escapeshellarg($username).' password='.escapeshellarg($password));
+    $output = shell_exec('/usr/bin/php72/bin/php -q /usr/local/brainycp/2FA/api.php action=check_user username='.escapeshellarg($username).' password='.escapeshellarg($password));
     return json_decode($output);
 }
 
@@ -66,7 +66,7 @@ if(check_user2FA($login_panel, $password_panel)->user == false) {
 
 // Отправляем данные для получения данных 2FA
 function send2FA($username, $password, $otp) {
-    $output = shell_exec("/usr/bin/php72/bin/php -q /etc/brainy/2FA/api.php username=".escapeshellarg($username)." password=".escapeshellarg($password)." otp={$otp}");
+    $output = shell_exec("/usr/bin/php72/bin/php -q /usr/local/brainycp/2FA/api.php username=".escapeshellarg($username)." password=".escapeshellarg($password)." otp={$otp}");
     return json_decode($output);
 }
 
