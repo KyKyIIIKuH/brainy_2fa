@@ -8,12 +8,7 @@
 # Установка:
 1) Скачать zip архив
 2) Распаковать в папку панели /etc/brainy (можно исключить файлы LICENSE и README.md)
-3) советую поменять название файла auth.php на другое
-- в файле /etc/brainy/auth_2FA.php, указываем название файла авторизации которое указали в 3 шаге
-```html
-$file_auth_brainy = "auth.php";
-```
-4) В файле /etc/brainy/tpl/basic/auth/auth.tpl
+3) В файле /etc/brainy/tpl/basic/auth/auth.tpl
 
 Найти:
 ```html
@@ -24,9 +19,9 @@ $file_auth_brainy = "auth.php";
 <form class="auth-form" action="auth_2FA.php" method="post">
 ```
 
-5) Открыть панель https://your_ip:8000/index.php?do=2FA (your_ip - ip адрес вашей панели)
-6) Создаем новый QR код
-7) Запускаем приложение Google Authenticator или Authy, сканируем QR Code
+4) Открыть панель https://your_ip:8000/index.php?do=2FA (your_ip - ip адрес вашей панели)
+5) Создаем новый QR код
+6) Запускаем приложение Google Authenticator или Authy, сканируем QR Code
 
 Также можно добавить ссылку в боковое меню (код вставлять в файл /etc/brainy/tpl/basic/index.tpl):
 
